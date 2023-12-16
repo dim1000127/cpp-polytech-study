@@ -30,3 +30,15 @@
 *.exe
 *.out
 *.app
+
+
+.vscode/
+.idea/
+*.suo
+*.sln
+*.user
+*.suo
+*.userprefs
+*.sublime-project
+*.sublime-workspace
+
