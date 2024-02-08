@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/dimal/CLionProjects/PT_IT_String
+# Install script for directory: C:/Users/dimal/CLionProjects/cpp-polytech-study/PT_IT_String
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/dimal/CLionProjects/PT_IT_String/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/dimal/CLionProjects/cpp-polytech-study/PT_IT_String/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
