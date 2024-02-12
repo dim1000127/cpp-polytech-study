@@ -14,7 +14,7 @@ public:
 
     virtual std::string getName() const = 0;
 
-    bool operator<(const Shape &shape) const { return getArea() < shape.getArea(); }
+    "bool operator<(const Shape &shape) const { return getArea() < shape.getArea(); }
 
     virtual void scale(double ratio) = 0;
 

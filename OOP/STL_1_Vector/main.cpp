@@ -92,6 +92,7 @@ int main() {
 
     std::vector<int> vectorOfIntForAt(vectorOfInt.begin(), vectorOfInt.end());
     std::vector<int> vectorOfIntForIterator(vectorOfInt.begin(), vectorOfInt.end());
+    std::vector<int> vectorOfIntBySort(vectorOfInt.begin(), vectorOfInt.end());
 
     int temp{};
 
@@ -115,7 +116,7 @@ int main() {
     }
 
     auto endTimeSortByOperator = std::chrono::steady_clock::now();
-    auto elapsedNsSortByOperator = std::chrono::duration_cast<std::chrono::milliseconds>(
+    auto elapsedNsSortByOperator = std::chrono::duration_cast<std::chrono::nanoseconds>(
             endTimeSortByOperator - startTimeSortByOperator);
 
     //std::cout << std::endl;
@@ -142,7 +143,7 @@ int main() {
     }
 
     auto endTimeSortByAt = std::chrono::steady_clock::now();
-    auto elapsedNsSortByAt = std::chrono::duration_cast<std::chrono::milliseconds>(endTimeSortByAt - startTimeSortByAt);
+    auto elapsedNsSortByAt = std::chrono::duration_cast<std::chrono::nanoseconds>(endTimeSortByAt - startTimeSortByAt);
 
     //std::cout << std::endl;
     //std::cout << "After: sort by using at" << std::endl;
@@ -172,16 +173,26 @@ int main() {
     }
 
     auto endTimeSortByIterator = std::chrono::steady_clock::now();
-    auto elapsedNsSortByIterator = std::chrono::duration_cast<std::chrono::milliseconds>(
+    auto elapsedNsSortByIterator = std::chrono::duration_cast<std::chrono::nanoseconds>(
             endTimeSortByIterator - startTimeSortByIterator);
 
     //std::cout << std::endl;
     //std::cout << "After: sort by using at" << std::endl;
     //printVector(vectorOfIntForIterator);
 
-    std::cout << "Sort by operator[] time : " << elapsedNsSortByOperator.count() << " ms" << std::endl;
-    std::cout << "Sort by at time : " << elapsedNsSortByAt.count() << " ms" << std::endl;
-    std::cout << "Sort by iterator time : " << elapsedNsSortByIterator.count() << " ms" << std::endl;
+    //Sort by built-in function
+    auto startTimeSortBySort = std::chrono::steady_clock::now();
+    std::sort(vectorOfIntBySort.begin(), vectorOfIntBySort.end());
+
+    auto endTimeSortBySort = std::chrono::steady_clock::now();
+    auto elapsedNsSortBySort = std::chrono::duration_cast<std::chrono::nanoseconds>(
+            endTimeSortBySort - startTimeSortBySort);
+
+    std::cout << "Sort by operator[] time : " << elapsedNsSortByOperator.count() << " ns" << std::endl;
+    std::cout << "Sort by at time : " << elapsedNsSortByAt.count() << " ns" << std::endl;
+    std::cout << "Sort by iterator time : " << elapsedNsSortByIterator.count() << " ns" << std::endl;
+    std::cout << "Sort by sort built-in function : " << elapsedNsSortBySort.count() << " ns" << std::endl;
+
 
     //4. Read from file
     std::ifstream in("file.txt");
