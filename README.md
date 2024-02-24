@@ -17,3 +17,5 @@
 Задания расположены в архиве [oop.zip](/OOP/oop_tasks.zip)
 
 1. [STL_1_Vector](/OOP/STL_1_Vector)
+
+2. [STL_2_String](/OOP/STL_2_String)

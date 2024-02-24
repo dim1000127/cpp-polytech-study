@@ -1,3 +1,0 @@
-C:/Users/dimal/CLionProjects/cpp-polytech-study/PT_IT_Polymorphism/cmake-build-debug/CMakeFiles/PT_IT_Polymorphism.dir
-C:/Users/dimal/CLionProjects/cpp-polytech-study/PT_IT_Polymorphism/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/dimal/CLionProjects/cpp-polytech-study/PT_IT_Polymorphism/cmake-build-debug/CMakeFiles/rebuild_cache.dir

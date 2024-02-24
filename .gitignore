@@ -35,6 +35,10 @@
 
 .vscode/
 .idea/
+.cmake/
+CMakeFiles/
+Testing/
+cmake-build-debug/
 *.suo
 *.sln
 *.user
@@ -42,4 +46,5 @@
 *.userprefs
 *.sublime-project
 *.sublime-workspace
-
+*.ninja_deps
+*.ninja_log

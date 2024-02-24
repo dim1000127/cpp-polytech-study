@@ -1,3 +1,0 @@
-C:/Users/dimal/CLionProjects/cpp-polytech-study/OOP/STL_3_List_Deque/cmake-build-debug/CMakeFiles/STL_3_List_Deque.dir
-C:/Users/dimal/CLionProjects/cpp-polytech-study/OOP/STL_3_List_Deque/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/dimal/CLionProjects/cpp-polytech-study/OOP/STL_3_List_Deque/cmake-build-debug/CMakeFiles/rebuild_cache.dir
