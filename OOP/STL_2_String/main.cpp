@@ -110,6 +110,7 @@ std::vector<std::string> transformIntoLines(const std::string &str) {
 }
 
 int main() {
+    //todo::refactoring
     std::ifstream in("file.txt");
     if (!in.is_open()) {
         std::cout << "File can't be opened!\n";

@@ -12,6 +12,8 @@ bool isContainsAsChar(const char *source, char ch);
 bool isContainsAsString(const std::string &source, char ch);
 
 int main() {
+
+    //todo::refactoring
     std::ifstream in("file.txt");
     if (!in.is_open()) {
         std::cout << "File can't be opened!\n";
